@@ -20,7 +20,7 @@
     </properties>
 
     <scm>
-        <developerConnection>scm:git:git://github.com/asera79/dummy.git</developerConnection>
+        <developerConnection>scm:git:git@github.com:asera79/dummy.git</developerConnection>
     </scm>
 
     <build>

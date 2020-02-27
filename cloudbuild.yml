@@ -1,6 +1,6 @@
 steps:
   - name: gcr.io/cloud-builders/git
-    args: ['clone', 'https://github.com/asera79/dummy.git', '--depth', '1']
+    args: ['clone', 'https://github.com/asera79/dummy.git', '--depth', '1', '--branch', '$TAG_NAME']
   - name: maven:3.6.0-jdk-11-slim
     entrypoint: 'mvn'
     dir: 'dummy'

@@ -1,0 +1,7 @@
+steps:
+  - name: gcr.io/cloud-builders/git
+    args: ['clone', 'https://github.com/asera79/dummy.git', '--depth', '1']
+  - name: maven:3.6.0-jdk-11-slim
+    entrypoint: 'mvn'
+    dir: 'dummy'
+    args: ['clean', 'install', 'jib:build']
